@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>
+        loader
+    </title>
+    <style>
+  #loader {
+        width: 150px;
+        height: 150px;
+        border: lightgrey 20px solid;
+        border-radius: 50%;
+        border-top: #02183A 20px solid;
+        animation-name: yeet;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-top: 20%;
+        margin-left: 40%;
+
+    }
+
+    @keyframes yeet {
+        0% {
+            transform: rotate(0deg);
+            border-top:#02183A 20px solid;
+        }
+
+        25% {
+            transform: rotate(90deg);
+            border-top:#02183A 20px solid;
+            border-right:#02183A 20px solid;
+        }
+
+        50% {
+            transform: rotate(180deg);
+            border-top: #02183A 20px solid;
+            border-right:#02183A 20px solid;
+            border-bottom:#02183A 20px solid;
+        }
+
+        75% {
+            transform: rotate(270deg);
+            border-top: #02183A 20px solid;
+            border-right: #02183A 20px solid;
+            border-bottom: #02183A 20px solid;
+            border-left: #02183A 20px solid;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            border: #02183A 20px solid;
+    </style>
+</head>
+
+<body>
+   <div id= "loader">
+   </div>
+    <div id="content" style= "display: none ;">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ad, cupiditate iure recusandae quia facere deserunt sunt voluptatum, dolorem, commodi dicta asperiores maxime illo nesciunt et a? Corrupti nesciunt suscipit et, modi adipisci odit velit ab unde tenetur iure officiis quasi ipsam voluptate cum possimus molestiae error ratione eum! Eos dolorem illo voluptatem sequi veniam laboriosam laborum ipsa nam, asperiores voluptatibus rerum soluta rem aliquid quas modi culpa, consequatur fugit similique doloremque ut distinctio, voluptate aut alias. Corporis alias temporibus magnam, magni aspernatur esse minus eos amet recusandae incidunt cum ab nam molestias dignissimos nemo dicta doloribus quas molestiae qui!
+        </p>
+    </div>
+    <script>
+    function display(){
+        document.getElementById("loader").style.display = "none"
+        document.getElementById("content").style.display = "block"
+    }
+    setTimeout(display , 4000)
+    </script>
+</body>
+</html>
